@@ -1,0 +1,120 @@
+.cover-image {
+  width: 100%;
+  margin: 0 auto;
+}
+.cover-image .img {
+  min-height: 600px;
+  background: url(../../../assets/cover/blog-cover.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 600px;
+}
+.cover-overlay {
+  position: absolute;
+  top: 200px;
+  left: 15%;
+  width: 40%;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.cover-content {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 50%;
+  transform: translateX(-50%);
+  color: var(--primary-color);
+}
+.cover-content h2 {
+  font-weight: 900;
+  font-size: 52px;
+  text-transform: uppercase;
+}
+.cover-content hr {
+  margin-top: -10px;
+  padding: 0;
+  background: var(--minimal-color);
+  width: 100%;
+  height: 9px;
+  width: 70%;
+  -moz-animation: expand 2s ease-in-out;
+  -webkit-animation: expand 2s ease-in-out;
+  animation: expand 2s ease-in-out;
+}
+.blog-row {
+  width: 100%;
+  margin-top: 20px;
+  padding: 50px;
+  background: var(--primary-color);
+}
+.blog-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.blog-column1 {
+  float: left;
+  width: 70%;
+  padding: 10px;
+}
+.blog-content {
+  width: 100%;
+}
+.blog-content img {
+  width: 90%;
+  margin-top: -10px;
+}
+.blog-content p {
+  width: 90%;
+}
+.blog-content .detail {
+  display: flex;
+}
+.blog-content .detail .date {
+  background-color: var(--success-color);
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blog-content .detail .tag {
+  background-color: var(--alert-color);
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.blog-column2 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+.blog-column2 .categories a {
+  display: block;
+  transition: 0.5s all linear;
+  font-weight: 500;
+  color: var(--minimal-color);
+}
+.blog-column2 .categories a:hover,
+.blog-column2 .categories a:focus {
+  text-decoration-line: underline;
+  display: block;
+  color: var(--secondary-color);
+}
+
+@keyframes expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .blog-column1 {
+    float: left;
+    min-width: 750px;
+    min-width: 100%;
+  }
+  .blog-column2 {
+    float: left;
+    width: 100%;
+  }
+}

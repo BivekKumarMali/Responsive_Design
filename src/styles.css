@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand;
+  --primary-color: #efefef;
+  --secondary-color: #565d5e;
+  --pale-secondary-color: #95a5a6;
+  --minimal-color: #41a186;
+  --success-color: #4bc50d;
+  --alert-color: #ea5455;
+}
+
+.primary-btn-size {
+  width: 106px;
+}
+.primary-btn {
+  color: white;
+  background-color: var(--secondary-color);
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease-in;
+}
+.primary-btn:focus {
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+.footer-content {
+  margin: 0 auto;
+  width: 50%;
+  padding: 50px 50px 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-content i {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 925px) {
+  .footer-content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
